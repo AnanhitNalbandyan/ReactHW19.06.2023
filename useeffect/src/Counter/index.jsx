@@ -1,9 +1,13 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import style from './style.module.scss'
 
 export const Counter = ()=>{
 
     const [counter, setCounter]= useState(0)
+
+useEffect(()=>{
+    localStorage.setItem('counter', counter)
+}, [counter])
 
     const discrimrntCounter =()=>{
         if (counter === 0) {
