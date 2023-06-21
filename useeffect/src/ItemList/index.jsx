@@ -25,7 +25,7 @@ export const ItemList =()=>{
             }
         }
 
-        FetchData(22)
+        FetchData(6)
 
     }, [])
 
